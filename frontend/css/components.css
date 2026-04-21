@@ -11,6 +11,8 @@
 }
 
 .navicon {
+	transition: all .15s linear .15s;
+	display: block;
 	background: #333;
 	position: absolute;
 	height: 2px;
@@ -20,52 +22,47 @@
 
 .navicon::before,
 .navicon::after {
+	transition: all .15s linear .15s;
 	background: #333;
 	content: '';
 	position: absolute;
 	height: 100%;
 	width: 100%;
+	display: block;
 }
 
 .navicon::before {
-	transition: transform .15s linear .15s;
-	transform: rotate(90deg);
-	transition: top .15s linear .15s;
 	top: 5px;
 }
 
 .navicon::after {
-	transition: top .15s linear .15s;
 	top: -5px;
 }
 
 .menu {
-	height: 0;
-	padding-top: 3.2rem;
-	overflow: hidden;
+	transition: all .15s linear .15s;
+	position: absolute;
+	top: 3.2rem;
+	left: -8rem;
 }
 
 #menu__btn:checked + .menu__icon .menu {
-	height: 100px;
+	left: 0;
 }
 
 #menu__btn:checked + 
 .menu__icon .navicon {
-	transition: transform .15s linear .15s;
 	transform: rotate(45deg);
 }
 
 #menu__btn:checked + 
 .menu__icon .navicon::before {
-	transition: top .15s linear 0s;
 	top: 0;
-	transition: transform .15s linear .15s;
 	transform: rotate(-90deg);
 }
 
 #menu__btn:checked + 
 .menu__icon .navicon::after {
-	transition:  .15s linear 0s;
 	top: 0;
 }
 
