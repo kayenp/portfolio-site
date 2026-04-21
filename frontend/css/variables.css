@@ -1,3 +1,18 @@
 :root {
-	
+
+	/* Font size*/
+	--font-md: 1.6rem;
+
+	/* Colors */
+	--primary-text: #333;
+
+	/* Spacing */
+	--space-md: 1.6rem;
+
+	/* Display */
+	--display-flex: flex;
+	--space-between: space-between;
+
+	/* Position */
+	--pos-rel: relative;
 }

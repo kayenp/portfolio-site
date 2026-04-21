@@ -1,0 +1,72 @@
+.header {
+	display: var(--display-flex);
+	position: var(--pos-rel);
+	justify-content: var(--space-between);
+}
+
+/* Mobile navigation open*/
+
+#menu__btn {
+	display: none;
+}
+
+.navicon {
+	background: #333;
+	position: absolute;
+	height: 2px;
+	width: 18px;
+	top: 12px;
+}
+
+.navicon::before,
+.navicon::after {
+	background: #333;
+	content: '';
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+
+.navicon::before {
+	transition: transform .15s linear .15s;
+	transform: rotate(90deg);
+	transition: top .15s linear .15s;
+	top: 5px;
+}
+
+.navicon::after {
+	transition: top .15s linear .15s;
+	top: -5px;
+}
+
+.menu {
+	height: 0;
+	padding-top: 3.2rem;
+	overflow: hidden;
+}
+
+#menu__btn:checked + .menu__icon .menu {
+	height: 100px;
+}
+
+#menu__btn:checked + 
+.menu__icon .navicon {
+	transition: transform .15s linear .15s;
+	transform: rotate(45deg);
+}
+
+#menu__btn:checked + 
+.menu__icon .navicon::before {
+	transition: top .15s linear 0s;
+	top: 0;
+	transition: transform .15s linear .15s;
+	transform: rotate(-90deg);
+}
+
+#menu__btn:checked + 
+.menu__icon .navicon::after {
+	transition:  .15s linear 0s;
+	top: 0;
+}
+
+
