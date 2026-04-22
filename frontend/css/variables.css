@@ -4,7 +4,11 @@
 	--font-md: 1.6rem;
 
 	/* Colors */
-	--primary-text: #333;
+	--primary-text: #212529; /* main body text, headings */
+	--secondary-text: #6c757d; /* placeholder text, footer links, secondary UI labels */
+	--accent-dividers: #dee2e6; /*borders, input fields, content separating */
+	--surface-card: #fff; /* content containers, cards, nav */
+	--background-color: #f8f9fa; /* main website background */
 
 	/* Spacing */
 	--space-md: 1.6rem;
