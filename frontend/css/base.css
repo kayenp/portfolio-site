@@ -9,12 +9,12 @@
 }
 
 body {
-	color: #333;
+	background: #f9f8fa;
+	color: #212529;
 	font-size: 1.6rem;
 	line-height: 1.5;
 	margin-left: auto;
 	margin-right: auto;
-	padding: 1.6rem;
 	width: 384px;
 }
 
