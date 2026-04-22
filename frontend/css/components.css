@@ -1,53 +1,68 @@
 .header {
-	display: var(--display-flex);
-	position: var(--pos-rel);
-	justify-content: var(--space-between);
+	border-bottom: 1px solid #DEE2E6;
 }
 
-/* Mobile navigation open*/
+.nav {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-start;
+	padding: 1.6rem;
+}
 
 #menu__btn {
 	display: none;
 }
 
+.menu__icon {
+	display: block;
+	position: absolute;
+	top: 16px;
+	left: 16px;
+	height: 18px;
+	width: 18px;
+}
+
 .navicon {
-	transition: all .15s linear .15s;
+	transition: transform .15s linear .15s;
 	display: block;
 	background: #333;
 	position: absolute;
 	height: 2px;
 	width: 18px;
-	top: 12px;
+	top: 9px;
 }
 
 .navicon::before,
 .navicon::after {
-	transition: all .15s linear .15s;
+	transition: top .15s linear .15s, transform .15s linear .15s;
 	background: #333;
 	content: '';
 	position: absolute;
+	top: 0;
+	left: 0;
 	height: 100%;
 	width: 100%;
 	display: block;
 }
 
 .navicon::before {
-	top: 5px;
+	transform: translateY(5px);
 }
 
 .navicon::after {
-	top: -5px;
+	transform: translateY(-5px);
 }
 
 .menu {
-	transition: all .15s linear .15s;
+	transition: transform .15s linear .15s;
 	position: absolute;
-	top: 3.2rem;
-	left: -8rem;
+	top: 36px;
+	left: 0;
+	transform: translateX(-80px);
 }
 
 #menu__btn:checked + .menu__icon .menu {
-	left: 0;
+	transform: translateX(0);
 }
 
 #menu__btn:checked + 
@@ -57,13 +72,11 @@
 
 #menu__btn:checked + 
 .menu__icon .navicon::before {
-	top: 0;
-	transform: rotate(-90deg);
+	transform: translateY(0) rotate(-90deg);
 }
 
 #menu__btn:checked + 
 .menu__icon .navicon::after {
-	top: 0;
+	transform: translateY(0) scale(0);
 }
-
 
