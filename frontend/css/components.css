@@ -1,11 +1,11 @@
 .header {
-	border-bottom: 1px solid #DEE2E6;
+
 }
 
 .nav {
+	position: relative;
 	display: flex;
 	justify-content: flex-end;
-	align-items: flex-start;
 	padding: 1.6rem;
 }
 
@@ -25,24 +25,25 @@
 .navicon {
 	transition: transform .15s linear .15s;
 	display: block;
-	background: #333;
 	position: absolute;
+	top: 9px;
+	left: 0;
 	height: 2px;
 	width: 18px;
-	top: 9px;
+	background: var(--secondary-text);
 }
 
 .navicon::before,
 .navicon::after {
-	transition: top .15s linear .15s, transform .15s linear .15s;
-	background: #333;
+	transition: transform .15s linear .15s;
+	display: block;
 	content: '';
 	position: absolute;
 	top: 0;
 	left: 0;
 	height: 100%;
 	width: 100%;
-	display: block;
+	background: var(--secondary-text);
 }
 
 .navicon::before {
@@ -56,27 +57,33 @@
 .menu {
 	transition: transform .15s linear .15s;
 	position: absolute;
-	top: 36px;
+	top: 24px;
 	left: 0;
-	transform: translateX(-80px);
+	transform: translateX(-160px);
+	background: #fff;
+	padding-left: 1.6rem;
+	padding-right: 1.6rem;
+	padding-bottom: 1.6rem;
 }
 
-#menu__btn:checked + .menu__icon .menu {
-	transform: translateX(0);
-}
-
-#menu__btn:checked + 
-.menu__icon .navicon {
+#menu__btn:checked + .menu__icon .navicon {
 	transform: rotate(45deg);
 }
 
-#menu__btn:checked + 
-.menu__icon .navicon::before {
-	transform: translateY(0) rotate(-90deg);
+#menu__btn:checked + .menu__icon .navicon::before {
+	transform: translateY(0px) rotate(-90deg) ;
 }
 
-#menu__btn:checked + 
-.menu__icon .navicon::after {
-	transform: translateY(0) scale(0);
+#menu__btn:checked + .menu__icon .navicon::after {
+	transform: translateY(0px) scale(0);
 }
 
+#menu__btn:checked + .menu__icon .menu {
+	transform: translateX(0px);
+}
+
+.hero {
+	padding-top: var(--space-xxl);
+	padding-left: var(--space-md);
+	padding-right: var(--space-md);
+}
