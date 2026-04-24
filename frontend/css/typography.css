@@ -1,0 +1,27 @@
+.hero__h1 {
+	font: 700 3.2rem/1.2 'Poppins';
+	letter-spacing: 0ch;
+}
+
+.hero__span1 {
+	text-transform: uppercase;
+}
+
+.hero__span2 {
+	text-transform: uppercase;
+}
+
+.hero__btn {
+	font: 700 1.6rem/1.2 'Poppins';
+	text-transform: uppercase;
+}
+
+
+.hero__sub {
+	word-spacing: 15%;
+}
+
+.span--italics {
+	font-weight: 700;
+	font-style: italic;
+}
