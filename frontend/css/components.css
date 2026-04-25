@@ -18,13 +18,16 @@
 }
 
 .hero__btn {
+	transition: box-shadow .15s linear .15s;
 	background: none;
 	border: 2px solid #dee2e6;
 	border-radius: 9999px;
 	padding: 1.6rem 7.2rem 1.6rem 3.6rem;
 	height: 56px;
 	position: relative;
+	box-shadow: inset 0 0 0 0 #dee2e6;
 }
+
 
 .btn__text {
 	position: relative;
@@ -34,11 +37,34 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 56px;
-	width: 56px;
+	height: 54px;
+	width: 54px;
 	position: absolute;
 	right: -1px;
 	top: -1px;
+	transform: translateX(0);
 	background: #dee2e6;
 	border-radius: 50%;
 }
+
+.bottom-nav {
+	background: #dee2e6;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 1.6rem 0;
+}
+
+.menu {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.fa-stack.small {
+	font-size: 2.4rem;
+}
+
+/* .menu__class {
+	flex: 0 1 75px;
+} */
