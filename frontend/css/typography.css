@@ -18,7 +18,9 @@
 
 
 .hero__sub {
-	word-spacing: 15%;
+	font-size: 1.4rem;
+	font-weight: 700;
+	/* word-spacing: 15%; */
 }
 
 .span--italics {
