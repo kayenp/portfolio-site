@@ -11,26 +11,26 @@
 }
 
 .btn__icon {
-	background: #dee2e6;
+	background: #6c757d;
 	color: #fff;
 }
 
 .bottom-nav {
-	background: #fff;
+	background: #f8f9fa;
 }
 
 .current__page .fa-stack-2x {
-	color: #6c757d;
+	color: #212529;
 }
  
 .current__page .fa-stack-1x {
-	color: #dee2e6;
+	color: #fff;
 }
 
 .fa-stack-2x {
-	color: #dee2e6;
+	color: #6c757d;
 }
 
 .fa-stack-1x {
-	color: #fff;
+	color: #dee2e6;
 }
