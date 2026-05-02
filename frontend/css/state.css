@@ -1,0 +1,56 @@
+.body:has(#theme__checkbox:checked) {
+    background: #212529;
+    color: #dee2e6;
+}
+
+#theme__checkbox:checked + .theme__label.fa-moon {
+    transform: translateX(100%);
+}
+
+#theme__checkbox:checked + .theme__label .fa-sun {
+    color: #dee2e6;
+    transform: translateX(0);
+}
+
+.body:has(#theme__checkbox:checked) .hero__span1 {
+	color: #f8f9fa;
+}
+
+.body:has(#theme__checkbox:checked) .hero__span2 {
+	color: #dee2e6;
+}
+
+.body:has(#theme__checkbox:checked) .hero__btn {
+	color: #f8f9fa;
+}
+
+.body:has(#theme__checkbox:checked) .hero__btn::before {
+    background: #dee2e6;
+}
+
+.body:has(#theme__checkbox:checked) .btn__icon {
+	background: #dee2e6;
+	color: #212529;
+}
+
+.body:has(#theme__checkbox:checked) .bottom-nav {
+	background: #212529;
+    box-shadow: 0 0 8px #6c757d;
+}
+
+.body:has(#theme__checkbox:checked) .current__page .fa-stack-2x {	
+    color: #f8f9fa;
+}
+ 
+.body:has(#theme__checkbox:checked) .current__page .fa-stack-1x {
+    color: #212529;
+}
+
+.body:has(#theme__checkbox:checked) .fa-stack-2x {
+	color: #6c757d;
+}
+
+.body:has(#theme__checkbox:checked) .fa-stack-1x {
+    color: #dee2e6;
+
+}
