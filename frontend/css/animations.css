@@ -1,3 +1,7 @@
 .hero__btn:hover {
-	box-shadow: inset -245px 0 0 0 #dee2e6;
+	color: #fff;
+}
+
+.hero__btn:hover:before {
+	transform: translateX(0);
 }

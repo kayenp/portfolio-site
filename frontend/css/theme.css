@@ -10,16 +10,27 @@
 	color: #6c757d;
 }
 
-
 .btn__icon {
 	background: #dee2e6;
 	color: #fff;
 }
 
+.bottom-nav {
+	background: #fff;
+}
+
+.current__page .fa-stack-2x {
+	color: #6c757d;
+}
+ 
+.current__page .fa-stack-1x {
+	color: #dee2e6;
+}
+
 .fa-stack-2x {
-	color: #fff;
+	color: #dee2e6;
 }
 
 .fa-stack-1x {
-	color: #dee2e6
+	color: #fff;
 }
