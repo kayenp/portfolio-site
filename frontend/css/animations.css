@@ -5,3 +5,11 @@
 .hero__btn:hover:before {
 	transform: translateX(0);
 }
+
+.body:has(#theme__checkbox:checked) .hero__btn:hover {
+	color: #212529;
+}
+
+.body:has(#theme__checkbox:checked) .hero__btn:hover:before {
+	transform: translateX(0);
+}
