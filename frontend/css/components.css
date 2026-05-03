@@ -5,6 +5,10 @@
 	padding: 1.6rem;
 }
 
+.header__section {
+	padding: 3.2rem 1.6rem;
+}
+
 #theme__checkbox {
 	display: none;
 }
@@ -68,7 +72,6 @@
 	z-index: -1;
 	content: '';
 	transform: translateX(100%);
-	background: #dee2e6;
 	border-radius: 9999px;
 }
 
@@ -102,4 +105,8 @@
 
 .fa-stack.small {
 	font-size: 2.4rem;
+}
+
+.portfolio__grid {
+	grid-template-columns: repeat(3, 1fr);
 }
