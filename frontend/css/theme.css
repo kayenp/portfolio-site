@@ -10,6 +10,9 @@
 	color: #6c757d;
 }
 
+.hero__btn::before {
+	background: #6c757d;
+}
 .btn__icon {
 	background: #6c757d;
 	color: #fff;
@@ -33,4 +36,13 @@
 
 .fa-stack-1x {
 	color: #dee2e6;
+}
+
+.attn {
+	color: #6c757d;
+}
+
+.badge {
+	background: #dee2e6;
+	color: #6c757d;
 }
