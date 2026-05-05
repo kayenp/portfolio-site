@@ -50,6 +50,11 @@
 	border-radius: 50%;
 }
 
+.btn__container {
+	display: inline-block;
+	position: relative;
+}
+
 .hero__btn {
 	transition: color .25s linear .15s;
 	display: inline-block;
@@ -59,8 +64,7 @@
 	border: 2px solid #6c757d;
 	border-radius: 9999px;
 	padding: 12px 72px 12px 36px;
-	overflow: clip;
-	overflow-clip-margin: border-box;
+	overflow: hidden;
 }
 
 .hero__btn::before {
@@ -81,11 +85,10 @@
 	height: 56px;
 	width: 56px;
 	position: absolute;
-	top: -1px;
-	right: -1px;
+	top: 0;
+	right: 0;
 	background: #6c757d;
 	border-radius: 50%;
-	will-change: auto;
 }
 
 .bottom-nav {
