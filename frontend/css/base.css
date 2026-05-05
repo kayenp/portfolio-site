@@ -14,8 +14,8 @@ body {
 	font: 1.6rem/1.5 'Manrope', 'Inter', 'Roboto', sans-serif, serif;
 	margin-left: auto;
 	margin-right: auto;
-	height: 727px;
 	width: 375px;
+	padding-bottom: 84px;
 }
 
 a {
