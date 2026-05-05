@@ -2,7 +2,7 @@
 	color: #fff;
 }
 
-.hero__btn:hover:before {
+.hero__btn:hover::before {
 	transform: translateX(0);
 }
 
