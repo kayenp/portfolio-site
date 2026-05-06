@@ -2,6 +2,10 @@
 	font: 700 2.8rem/1.2 'Poppins';
 }
 
+.h2 {
+	font: 700 2.4rem/1.2 'Poppins';
+}
+
 .hero__h1 {
 	font: 700 3.2rem/1.2 'Poppins';
 	letter-spacing: 0ch;
