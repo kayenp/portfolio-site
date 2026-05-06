@@ -38,11 +38,11 @@
     box-shadow: 0 0 8px #6c757d;
 }
 
-.body:has(#theme__checkbox:checked) .current__page .fa-stack-2x {	
+.body:has(#theme__checkbox:checked) .current-page .fa-stack-2x {	
     color: #f8f9fa;
 }
  
-.body:has(#theme__checkbox:checked) .current__page .fa-stack-1x {
+.body:has(#theme__checkbox:checked) .current-page .fa-stack-1x {
     color: #212529;
 }
 
@@ -53,4 +53,12 @@
 .body:has(#theme__checkbox:checked) .fa-stack-1x {
     color: #dee2e6;
 
+}
+
+.body:has(#theme__checkbox:checked) .blog-content__container {
+    background: #6c757d;
+}
+
+.body:has(#theme__checkbox:checked) .h2 {
+    color: #f8f9fa;
 }
