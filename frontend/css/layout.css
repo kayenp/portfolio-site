@@ -39,3 +39,15 @@
 	flex-wrap: wrap;
 	column-gap: 12px;
 }
+
+.blog__item {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-bottom: 3.2rem;
+}
+
+.blog-img__container {
+	display: flex;
+	align-items: flex-end;
+}
