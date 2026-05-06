@@ -22,7 +22,7 @@
 	background: #f8f9fa;
 }
 
-.current__page .fa-stack-2x {
+.current-page .fa-stack-2x {
 	color: #212529;
 }
  
@@ -46,3 +46,12 @@
 	background: #dee2e6;
 	color: #6c757d;
 }
+
+.blog-content__container {
+	background: #fff;
+}
+
+.blog-h2 {
+	color: #212529;
+}
+
