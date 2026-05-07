@@ -18,14 +18,13 @@
 	height: 34px;
 	width: 34px;
 	position: absolute;
-	top: 16px;
-	right: 16px;
+	top: 22px;
+	right: 0;
 	overflow: hidden;
 }
 
 .fa-circle-half-stroke {
 	display: flex;
-	justify-content: center;
 	align-items: center;
 	position: absolute;
 	inset: 0;
@@ -56,7 +55,7 @@
 }
 
 .hero__btn {
-	transition: color .25s linear .15s;
+	transition: color .25s linear 0s;
 	display: inline-block;
 	height: 56px;
 	position: relative;
@@ -68,7 +67,7 @@
 }
 
 .hero__btn::before {
-	transition: transform .30s linear .15s;
+	transition: transform .30s linear 0s;
 	position: absolute;
 	inset: -1px;
 	z-index: -1;
@@ -156,4 +155,56 @@
 .blog-h2 {
 	text-align: center;
 	padding-bottom: 1.6rem;
+}
+
+.h3 {
+	padding-bottom: .8rem;
+}
+
+.contact__container {
+	padding-bottom: 16px;
+}
+
+.contact__subcontainer {
+	width: 384px;
+	padding-bottom: 4.8rem;
+}
+
+.contact-h2__container {
+	flex: 100%;
+	padding-bottom: 1.6rem;
+}
+
+.email-socials__container {
+	height: 100%;
+}
+
+.big-icon__container {
+	height: 52px;
+}
+
+.email__container {
+	flex: 100%;
+}
+
+.socials__container {
+	flex: 100%;
+}
+
+.socials-icon__container {
+	height: 21px;
+}
+
+.contactForm input {
+	flex: 100%;
+	border: 1px solid #6c757d;
+	border-radius: 9999px;
+	padding: 16px 20px;
+}
+
+.contactForm textarea {
+	flex: 100%;
+	border: 1px solid #6c757d;
+	border-radius: 9999px;
+	padding: 16px 20px;
 }
