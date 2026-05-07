@@ -6,6 +6,10 @@
 	font: 700 2.4rem/1.2 'Poppins';
 }
 
+.h3 {
+	font: 700 1.6rem/1.2 'Poppins';
+}
+
 .hero__h1 {
 	font: 700 3.2rem/1.2 'Poppins';
 	letter-spacing: 0ch;
@@ -33,4 +37,9 @@
 .badge {
 	font-size: 1.2rem;
 	font-weight: 700;
+}
+
+.contactForm input,
+.contactForm textarea {
+	font-family: 'Poppins';
 }
