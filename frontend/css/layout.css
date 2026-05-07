@@ -51,3 +51,55 @@
 	display: flex;
 	align-items: flex-end;
 }
+
+.contact__container {
+	display: flex;
+	flex-direction: column;
+	
+}
+
+.contact__subcontainer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	row-gap: 2.4rem;
+}
+
+.email-socials__container {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	row-gap: 12px;
+}
+
+.big-icon__container {
+	display: flex;
+	align-items: center;
+	padding-top: 14px;
+}
+
+.email__container {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+}
+
+.socials__container {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+}
+
+.socials-icon__container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	column-gap: 8px;
+}
+
+.contactForm {
+	display: flex;
+	flex-direction: column;
+	row-gap: 16px;
+}
