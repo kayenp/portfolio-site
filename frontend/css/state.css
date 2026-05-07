@@ -62,3 +62,7 @@
 .body:has(#theme__checkbox:checked) .h2 {
     color: #f8f9fa;
 }
+
+.hero__btn:hover {
+    cursor: pointer;
+}
