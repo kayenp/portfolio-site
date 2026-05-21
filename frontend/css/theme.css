@@ -47,6 +47,10 @@
 	color: #6c757d;
 }
 
+.blog__item {
+	background: #fff;
+}
+
 .blog-content__container {
 	background: #fff;
 }
