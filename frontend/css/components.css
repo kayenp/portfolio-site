@@ -157,8 +157,13 @@
 }
 
 .blog-h2 {
-	text-align: center;
+	text-align: left;
 	padding-bottom: 1.6rem;
+}
+
+.blog-blurb {
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .h3 {
