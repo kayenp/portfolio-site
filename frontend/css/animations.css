@@ -1,15 +1,15 @@
-.hero__btn:hover {
+.btn__container:hover .slide__btn{
 	color: #fff;
 }
 
-.hero__btn:hover::before {
+.btn__container:hover .slide__btn::before {
 	transform: translateX(0);
 }
 
-.body:has(#theme__checkbox:checked) .hero__btn:hover {
+.body:has(#theme__checkbox:checked) .slide__btn:hover {
 	color: #212529;
 }
 
-.body:has(#theme__checkbox:checked) .hero__btn:hover:before {
+.body:has(#theme__checkbox:checked) .slide__btn:hover:before {
 	transform: translateX(0);
 }

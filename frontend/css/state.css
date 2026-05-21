@@ -1,3 +1,5 @@
+/* Dark theme */
+
 .body:has(#theme__checkbox:checked) {
     background: #212529;
     color: #dee2e6;
@@ -63,6 +65,51 @@
     color: #f8f9fa;
 }
 
+/* Media queries */
+
+@media all and (width >= 576px) {
+    .body {
+        max-width: 576px;
+    }
+
+    .blog {
+        width: auto;
+    }
+
+    /* .blog-img__container {
+        justify-content: center;
+    } */
+
+    .contact {
+        width: 576px;
+    }
+
+    .menu {
+        max-width: 576px;
+    }
+}
+
+@media all and (width >= 768px) {
+    .body {
+        max-width: 768px;
+    }
+
+    .menu {
+        max-width: 768px;
+    }
+}
+
+@media all and (width >= 1200px) {
+    .body {
+        max-width: 960px;
+    }
+
+    .menu {
+        max-width: 960px;
+    }
+}
+
 .hero__btn:hover {
     cursor: pointer;
 }
+

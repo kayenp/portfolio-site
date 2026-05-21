@@ -33,7 +33,19 @@
 			<section class='blog blog__flex'>
 				<div class='blog__item'>
 					<div class='blog-img__container'>
-						<img class='blog__img' src='https://cataas.com/cat?height=258&width=343' alt='a beautiful cat' height='258px' width='343px'>
+						<img class='blog__img cat' 
+						srcset='
+							./assets/images/384/oksana-maselko-unsplash_(Phone).jpg 384w,
+							./assets/images/576/oksana-maselko-unsplash_(Landscape_Phone).jpg 576w,
+							./assets/images/768/oksana-maselko-unsplash_(Tablet).jpg 768w,
+							./assets/images/992/oksana-maselko-unsplash_(Desktop).jpg 992w'		 
+						sizes='
+							(width <= 384px) 384px,
+							(width <= 576px) 576px,
+							(width <= 768px) 768px,
+							(width <= 992px) 992px,
+							992px'
+						alt='a beautiful cat'>
 					</div>
 					<a href="">
 						<div class='blog-content__container'>
@@ -45,7 +57,8 @@
 
 				<div class='blog__item'>
 					<div class='blog-img__container'>
-						<img class='blog__img' src='https://picsum.photos/343/258' alt='a random image from the website picsum.photos' height='258px' width='343px'>
+						<img class='blog__img inspire' src='assets/images/384/dayne-topkin-unsplash (Phone).jpg' 
+						alt='a random image from the website picsum.photos' width='384px'>
 					</div>
 					<a href="">
 						<div class='blog-content__container'>
@@ -57,7 +70,7 @@
 
 				<div class='blog__item'>
 					<div class='blog-img__container'>
-						<img class='blog__img' src='https://loremflickr.com/343/258' alt='a random image from the website flickr.com' height='258px' width='343px'>
+						<img class='blog__img funny' src='assets/images/384/gennifer-miller-unsplash (Phone).jpg' alt='a random image from the website flickr.com' width='320px'>
 					</div>
 					<a href="">
 						<div class='blog-content__container'>
@@ -68,7 +81,7 @@
 				</div>
 			</section>
 		</main>
-				<nav class='bottom-nav'>
+		<nav class='bottom-nav'>
 			<ul class='menu'>
 				<li class='menu__icon'>
 					<a href="index.html">
@@ -100,5 +113,6 @@
 				</li>
 			</ul>
 		</nav>
+		<script src='js/main.js'></script>
 	</body>
 </html>
