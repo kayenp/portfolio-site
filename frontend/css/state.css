@@ -97,6 +97,16 @@
     .menu {
         max-width: 768px;
     }
+
+    .blog-h2 {
+        padding-left: 6.4rem;
+        padding-right: 6.4rem;
+    }
+
+    .blog-blurb {
+        padding-left: 6.4rem;
+        padding-right: 6.4rem;
+    }
 }
 
 @media all and (width >= 1200px) {
@@ -106,6 +116,16 @@
 
     .menu {
         max-width: 960px;
+    }
+
+    .blog-h2 {
+        padding-left: 12.8rem;
+        padding-right: 12.8rem;
+    }
+
+    .blog-blurb {
+        padding-left: 12.8rem;
+        padding-right: 12.8rem;
     }
 }
 
