@@ -35,7 +35,7 @@
 	color: #212529;
 }
 
-.body:has(#theme__checkbox:checked) .bottom-nav {
+.body:has(#theme__checkbox:checked) .nav {
 	background: #212529;
     box-shadow: 0 0 8px #6c757d;
 }
@@ -69,33 +69,37 @@
 
 @media all and (width >= 576px) {
     .body {
-        max-width: 576px;
+        width: 576px;
+        padding-left: 3.2rem;
+        padding-right: 3.2rem;
     }
 
     .blog {
         width: auto;
     }
 
-    /* .blog-img__container {
-        justify-content: center;
-    } */
-
     .contact {
         width: 576px;
     }
 
     .menu {
-        max-width: 576px;
+        width: 576px;
     }
 }
 
 @media all and (width >= 768px) {
     .body {
-        max-width: 768px;
+        width: 768px;
     }
 
     .menu {
-        max-width: 768px;
+        display: block flex;
+        height: 400px;
+        justify-content: space-evenly;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        width: 68px;
     }
 
     .blog-h2 {
@@ -107,16 +111,27 @@
         padding-left: 6.4rem;
         padding-right: 6.4rem;
     }
+
+    .nav {
+        /* position: fixed; */
+        inset: 120px 120px auto auto;
+        display: block;
+        width: 80px;
+        height: 400px;
+        padding: 0 0 0 10px;
+        border-radius: 9999px;
+    }
+
 }
 
 @media all and (width >= 1200px) {
     .body {
-        max-width: 960px;
+        width: 960px;
     }
 
-    .menu {
-        max-width: 960px;
-    }
+    /* .menu {
+        width: 960px;
+    } */
 
     .blog-h2 {
         padding-left: 12.8rem;

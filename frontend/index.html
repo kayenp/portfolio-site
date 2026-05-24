@@ -20,56 +20,74 @@
 	</head>
 
 	<body class='body'>
-		<header class='header'>
-			<input id='theme__checkbox' type='checkbox'>
-			<label class='theme__label' for='theme__checkbox'>
-				<i class="fa-solid fa-circle-half-stroke fa-2xl"></i>
-			</label>
-		</header>
-		<section class='hero'>
-			<div class='img__container'>
-				<img class='hero__img' src='https://picsum.photos/224/224' alt='my beautiful face'>
-			</div>
-			<h1 class='hero__h1'><span class='hero__span1'>i'm ken poon.</span><span class='hero__span2'>web developer</span></h1>
-			<p class='hero__sub'>I'm a California-based full-stack web developer focused on crafting user-friendly web sites and web apps. I'm passionate about building excellent software that improves the lives of those around me.</p>
-			<div class='btn__container'>
-				<a href="portfolio.html">
-					<button class='hero__btn slide__btn'><span class='btn__text'>my portfolio</span><i class="btn__icon fa-solid fa-arrow-right"></i></button>
-				</a>
-			</div>
-		</section>
-		<nav class='bottom-nav'>
-			<ul class='menu'>
-				<li class='menu__icon current-page'>
-					<a href="index.html">
-						<span class='fa-stack small'>
-							<i class="fa-solid fa-circle fa-stack-2x"></i><i class=" fa-stack-1x fa-solid fa-house-chimney"></i>
-						</span>
+		<div class='body__container'>
+			<header class='header'>
+				<input id='theme__checkbox' type='checkbox'>
+				<label class='theme__label' for='theme__checkbox'>
+					<i class="fa-solid fa-circle-half-stroke fa-2xl"></i>
+				</label>
+				<nav class='top-nav nav'>
+					<ul class='top-menu'>
+						<li class='menu__icon current-page'>
+							<a href="index.html"><span>Home</span></a>
+						</li>
+						<li class='menu__icon current-page'>
+							<a href="portfolio.html"><span>Portfolio</span></a>
+						</li>
+						<li class='menu__icon current-page'>
+							<a href="contact.html"><span>Contact</span></a>
+						</li>
+						<li class='menu__icon current-page'>
+							<a href="blog.html"><span>Blog</span></a>
+						</li>
+					</ul>
+				</nav>
+			</header>
+			<section class='hero'>
+				<div class='img__container'>
+					<img class='hero__img' src='https://picsum.photos/224/224' alt='my beautiful face'>
+				</div>
+				<h1 class='hero__h1'><span class='hero__span1'>i'm ken poon.</span><span class='hero__span2'>web developer</span></h1>
+				<p class='hero__sub'>I'm a California-based full-stack web developer focused on crafting user-friendly web sites and web apps. I'm passionate about building excellent software that improves the lives of those around me.</p>
+				<div class='btn__container'>
+					<a href="portfolio.html">
+						<button class='hero__btn slide__btn'><span class='btn__text'>my portfolio</span><i class="btn__icon fa-solid fa-arrow-right"></i></button>
 					</a>
-				</li>
-				<li class='menu__icon'>
-					<a href='portfolio.html'>
-						<span class='fa-stack small'>
-							<i class="fa-solid fa-circle fa-stack-2x"></i><i class=" fa-stack-1x fa-solid fa-briefcase"></i>
-						</span>
-					</a>
-				</li>
-				<li class='menu__icon'>
-					<a href='contact.html'>
-						<span class='fa-stack small'>
-							<i class="fa-solid fa-circle fa-stack-2x"></i><i class=" fa-stack-1x fa-solid fa-envelope-open"></i>
-						</span>
-					</a>
-				</li>
-				<li class='menu__icon'>
-					<a href='blog.html'>
-						<span class='fa-stack small'>
-							<i class="fa-solid fa-circle fa-stack-2x"></i><i class=" fa-stack-1x fa-solid fa-comment-dots"></i>
-						</span>
-					</a>
-				</li>
-			</ul>
-		</nav>
+				</div>
+			</section>
+			<nav class='bottom-nav nav'>
+				<ul class='menu'>
+					<li class='menu__icon current-page'>
+						<a href="index.html">
+							<span class='fa-stack small'>
+								<i class="fa-solid fa-circle fa-stack-2x"></i><i class=" fa-stack-1x fa-solid fa-house-chimney"></i>
+							</span>
+						</a>
+					</li>
+					<li class='menu__icon'>
+						<a href='portfolio.html'>
+							<span class='fa-stack small'>
+								<i class="fa-solid fa-circle fa-stack-2x"></i><i class=" fa-stack-1x fa-solid fa-briefcase"></i>
+							</span>
+						</a>
+					</li>
+					<li class='menu__icon'>
+						<a href='contact.html'>
+							<span class='fa-stack small'>
+								<i class="fa-solid fa-circle fa-stack-2x"></i><i class=" fa-stack-1x fa-solid fa-envelope-open"></i>
+							</span>
+						</a>
+					</li>
+					<li class='menu__icon'>
+						<a href='blog.html'>
+							<span class='fa-stack small'>
+								<i class="fa-solid fa-circle fa-stack-2x"></i><i class=" fa-stack-1x fa-solid fa-comment-dots"></i>
+							</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
 		<script src='js/main.js'></script>
 	</body>
 </html>

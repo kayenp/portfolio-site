@@ -20,94 +20,96 @@
 	</head>
 
 	<body class='body'>
-		<header class='header'>
-			<input id='theme__checkbox' type='checkbox'>
-			<label class='theme__label' for='theme__checkbox'>
-				<i class="fa-solid fa-circle-half-stroke fa-2xl"></i>
-			</label>
-		</header>
-		<section class='header__section'>
-			<h1 class='h1'>Get In </span><span class='attn'>Touch</span></h1>
-		</section>	
-		<main class='main'>
-			<section class='contact'>
-				<div class='contact__container'>
-					<div class='contact__subcontainer'>
-						<div class='contact-h2__container'>
-							<h2 class='h2'>Thanks for stopping by!</h2>
-							<p>Feel free to reach out. I'm always open to discussing new projects, creative ideas or opportunities.</p>
-						</div>
-
-						<div class='email-socials__container'>
-							<div class='email__container'>
-								<div class='big-icon__container'><i class='fa-solid fa-envelope-open fa-2xl'></i></div>
-								<div class='email-h3__container'>
-									<h3 class='h3'>Mail Me</h3>
-									<span class=''>ken@gmail.com</span>
-								</div>
+		<div class='body__container'>
+			<header class='header'>
+				<input id='theme__checkbox' type='checkbox'>
+				<label class='theme__label' for='theme__checkbox'>
+					<i class="fa-solid fa-circle-half-stroke fa-2xl"></i>
+				</label>
+			</header>
+			<section class='header__section'>
+				<h1 class='h1'>Get In </span><span class='attn'>Touch</span></h1>
+			</section>
+			<main class='main'>
+				<section class='contact'>
+					<div class='contact__container'>
+						<div class='contact__subcontainer'>
+							<div class='contact-h2__container'>
+								<h2 class='contact-h2 h2'>Thanks for stopping by!</h2>
+								<p>Feel free to reach out. I'm always open to discussing new projects, creative ideas or opportunities.</p>
 							</div>
-
-							<div class='socials__container'>
-								<div class='big-icon__container'><i class="fa-solid fa-share-from-square fa-2xl"></i></div>
-								<div class='socials-h3__container'>
-									<h3 class='h3'>Or Reach Me At</h3>
-									<div class='socials-icon__container'>
-										<i class="fa-brands fa-twitter fa-lg"></i>
-										<i class="fa-brands fa-facebook fa-lg"></i>
-										<i class="fa-brands fa-linkedin fa-lg"></i>
-										<i class="fa-brands fa-github fa-lg"></i>
+							<div class='email-socials__container'>
+								<div class='email__container'>
+									<a href="mailto:ken@everstp.com">
+										<div class='big-icon__container'><i class='fa-solid fa-envelope-open fa-2xl'></i></div>
+									</a>
+									<div class='email-h3__container'>
+										<h3 class='h3'>Mail Me</h3>
+										<a href="mailto:ken@everstp.com"><span class=''>ken@everstp.com</span></a>
+									</div>
+								</div>
+								<div class='socials__container'>
+									<div class='big-icon__container'><i class="fa-solid fa-share-from-square fa-2xl"></i></div>
+									<div class='socials-h3__container'>
+										<h3 class='h3'>Or Reach Me At</h3>
+										<div class='socials-icon__container'>
+											<a href="https://x.com/KayEn_P"><i class="fa-brands fa-twitter fa-lg"></i></a>
+											<a href="https://www.facebook.com/ken.poon.792"><i class="fa-brands fa-facebook fa-lg"></i></a>
+											<a href="https://www.linkedin.com/in/ken-poon-ba62a779/"><i class="fa-brands fa-linkedin fa-lg"></i></a>
+											<a href="https://github.com/kayenp"><i class="fa-brands fa-github fa-lg"></i></a>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
+			
+						<form class='contactForm' name='contactForm'>
+							<input id='visitorName' type='text' placeholder='Your name'>
+							<input id='visitorEmail' type='text' placeholder='Your email'>
+							<input id='visitorSubject' type='text' placeholder='Your subject'>
+							<textarea id='visitorMsg' placeholder='Your message'></textarea>
+						</form>
 					</div>
-					
-					<form class='contactForm' name='contactForm'>
-						<input id='visitorName' type='text' placeholder='Your name'>
-						<input id='visitorEmail' type='text' placeholder='Your email'>
-						<input id='visitorSubject' type='text' placeholder='Your subject'>
-						<textarea id='visitorMsg' placeholder='Your message'></textarea>
-					</form>
-				</div>
-				
-				<div class='btn__container'>
-					<button class='hero__btn slide__btn'><span class='btn__text'>send message</span></button>
-					<i class="btn__icon fa-solid fa-arrow-right"></i>
-				</div>
-			</section>
-		</main>
-				<nav class='bottom-nav'>
-			<ul class='menu'>
-				<li class='menu__icon'>
-					<a href="index.html">
-						<span class='fa-stack small'>
-							<i class="fa-solid fa-circle fa-stack-2x"></i><i class=" fa-stack-1x fa-solid fa-house-chimney"></i>
-						</span>
-					</a>
-				</li>
-				<li class='menu__icon'>
-					<a href='portfolio.html'>
-						<span class='fa-stack small'>
-							<i class="fa-solid fa-circle fa-stack-2x"></i><i class=" fa-stack-1x fa-solid fa-briefcase"></i>
-						</span>
-					</a>
-				</li>
-				<li class='menu__icon current-page'>
-					<a href='contact.html'>
-						<span class='fa-stack small'>
-							<i class="fa-solid fa-circle fa-stack-2x"></i><i class=" fa-stack-1x fa-solid fa-envelope-open"></i>
-						</span>
-					</a>
-				</li>
-				<li class='menu__icon'>
-					<a href='blog.html'>
-						<span class='fa-stack small'>
-							<i class="fa-solid fa-circle fa-stack-2x"></i><i class=" fa-stack-1x fa-solid fa-comment-dots"></i>
-						</span>
-					</a>
-				</li>
-			</ul>
-		</nav>
+			
+					<div class='btn__container'>
+						<button class='hero__btn slide__btn'><span class='btn__text'>send message</span></button>
+						<i class="btn__icon fa-solid fa-arrow-right"></i>
+					</div>
+				</section>
+			</main>
+					<nav class='bottom-nav nav'>
+				<ul class='menu'>
+					<li class='menu__icon'>
+						<a href="index.html">
+							<span class='fa-stack small'>
+								<i class="fa-solid fa-circle fa-stack-2x"></i><i class=" fa-stack-1x fa-solid fa-house-chimney"></i>
+							</span>
+						</a>
+					</li>
+					<li class='menu__icon'>
+						<a href='portfolio.html'>
+							<span class='fa-stack small'>
+								<i class="fa-solid fa-circle fa-stack-2x"></i><i class=" fa-stack-1x fa-solid fa-briefcase"></i>
+							</span>
+						</a>
+					</li>
+					<li class='menu__icon current-page'>
+						<a href='contact.html'>
+							<span class='fa-stack small'>
+								<i class="fa-solid fa-circle fa-stack-2x"></i><i class=" fa-stack-1x fa-solid fa-envelope-open"></i>
+							</span>
+						</a>
+					</li>
+					<li class='menu__icon'>
+						<a href='blog.html'>
+							<span class='fa-stack small'>
+								<i class="fa-solid fa-circle fa-stack-2x"></i><i class=" fa-stack-1x fa-solid fa-comment-dots"></i>
+							</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
 		<script src='js/main.js'></script>
 	</body>
 </html>

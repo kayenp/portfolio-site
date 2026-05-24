@@ -1,8 +1,22 @@
+.body__container {
+	position: relative;
+}
+
 .header {
 	display: flex;
 	position: relative;
-	justify-content: flex-end;
+	/* justify-content: space-between; */
 	padding: 1.6rem;
+}
+
+.top-nav {
+	width: 100%;
+}
+
+.top-menu {
+	display: block flex;
+	width: 100%;
+	justify-content: space-between;
 }
 
 .header__section {
@@ -37,6 +51,12 @@
 
 .hero__span2 {
 	display: block;
+}
+
+.hero__sub {
+	max-width: 40ch;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .img__container {
@@ -97,7 +117,7 @@
 }
 
 .menu {
-	max-width: 384px;
+	width: 384px;
 	display: flex;
 	justify-content: space-evenly;
 	margin-left: auto;
@@ -184,6 +204,10 @@
 	padding-bottom: 1.6rem;
 }
 
+.contact-h2 {
+	padding-bottom: 1.6rem;
+}
+
 .email-socials__container {
 	height: 100%;
 }
@@ -192,13 +216,6 @@
 	height: 52px;
 }
 
-.email__container {
-	/* flex: 100%; */
-}
-
-.socials__container {
-	/* flex: 100%; */
-}
 
 .socials-icon__container {
 	height: 21px;
