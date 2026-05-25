@@ -44,15 +44,19 @@
 				</nav>
 			</header>
 			<section class='hero'>
-				<div class='img__container'>
-					<img class='hero__img' src='https://picsum.photos/224/224' alt='my beautiful face'>
-				</div>
-				<h1 class='hero__h1'><span class='hero__span1'>i'm ken poon.</span><span class='hero__span2'>web developer</span></h1>
-				<p class='hero__sub'>I'm a California-based full-stack web developer focused on crafting user-friendly web sites and web apps. I'm passionate about building excellent software that improves the lives of those around me.</p>
-				<div class='btn__container'>
-					<a href="portfolio.html">
-						<button class='hero__btn slide__btn'><span class='btn__text'>my portfolio</span><i class="btn__icon fa-solid fa-arrow-right"></i></button>
-					</a>
+				<picture class='img__container'>
+					<source media='(width <= 959px)' srcset='./assets/images/profile_square_(Custom).jpg'>
+					<source media='(width >= 960px)' srcset='./assets/images/3d7ac13a-f728-4390-8a02-9262c5ca3691_(Custom).jpg'>
+					<img class='hero__img' src='./assets/images/profile_square_(Custom).jpg' alt='my beautiful face'>
+				</picture>
+				<div class='hero__h1-container'>
+					<h1 class='hero__h1'><span class='hero__span1'>hey there</span><span class='hero__span2'>welcome to my site</span></h1>
+					<p class='hero__sub'>I'm a California-based full-stack web developer focused on crafting user-friendly web sites and web apps. I'm passionate about building excellent software that improves the lives of those around me.</p>
+					<div class='btn__container'>
+						<a href="portfolio.html">
+							<button class='hero__btn slide__btn'><span class='btn__text'>my portfolio</span><i class="btn__icon fa-solid fa-arrow-right"></i></button>
+						</a>
+					</div>
 				</div>
 			</section>
 			<nav class='bottom-nav nav'>
