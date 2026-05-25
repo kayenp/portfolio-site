@@ -100,16 +100,6 @@
         display: block;
     }
 
-    .menu {
-        /* display: block flex;
-        height: 400px;
-        justify-content: space-evenly;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-content: flex-start;
-        width: 68px; */
-    }
-
     .blog-h2 {
         padding-left: 6.4rem;
         padding-right: 6.4rem;
