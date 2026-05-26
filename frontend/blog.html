@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset='UTF-8'>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+		<script src="https://kit.fontawesome.com/7ea39dcb5e.js" crossorigin="anonymous"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+		<link rel='stylesheet' href='css/variables.css'>
+		<link rel='stylesheet' href='css/reset.css'>
+		<link rel='stylesheet' href='css/base.css'>
+		<link rel='stylesheet' href='css/layout.css'>
+		<link rel='stylesheet' href='css/components.css'>
+		<link rel='stylesheet' href='css/typography.css'>
+		<link rel='stylesheet' href='css/theme.css'>
+		<link rel='stylesheet' href='css/state.css'>
+		<link rel='stylesheet' href='css/animations.css'>
+		<title>Home Page</title>
+	</head>
+
+	<body class='body'>
+		<div class='body__container'>
+			<header class='header'>
+				<input id='theme__checkbox' type='checkbox'>
+				<label class='theme__label' for='theme__checkbox'>
+					<i class="fa-solid fa-circle-half-stroke fa-2xl"></i>
+				</label>
+				<nav class='top-nav nav'>
+					<ul class='top-menu'>
+						<li class='menu__icon current-page'>
+							<a href="index.html"><span>Home</span></a>
+						</li>
+						<li class='menu__icon current-page'>
+							<a href="portfolio.html"><span>Portfolio</span></a>
+						</li>
+						<li class='menu__icon current-page'>
+							<a href="contact.html"><span>Contact</span></a>
+						</li>
+						<li class='menu__icon current-page'>
+							<a href="blog.html"><span>Blog</span></a>
+						</li>
+					</ul>
+				</nav>
+			</header>
+			<section class='header__section'>
+				<h1 class='h1'>My </span><span class='attn'>Random Musings</span></h1>
+			</section>
+			<main class='main'>
+				<section class='blog blog__flex'>
+					<div class='blog__item'>
+						<div class='blog-img__container'>
+							<img class='blog__img cat'
+							srcset='
+								./assets/images/384/oksana-maselko-unsplash_(Phone).jpg 384w,
+								./assets/images/576/oksana-maselko-unsplash_(Landscape_Phone).jpg 576w,
+								./assets/images/768/oksana-maselko-unsplash_(Tablet).jpg 768w,
+								./assets/images/992/oksana-maselko-unsplash_(Large_Desktop).jpg 992w'
+							sizes='
+								(width <= 384px) 384px,
+								(width <= 576px) 576px,
+								(width <= 768px) 768px,
+								(width <= 992px) 992px,
+								992px'
+							alt='a beautiful cat'>
+						</div>
+						<a href="">
+							<div class='blog-content__container'>
+								<h2 class='blog-h2 h2'>Cats. Are they the best? Or just one of the best?</h2>
+								<p class='blog-blurb'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam distinctio doloribus libero enim natus modi asperiores, commodi ea laudantium quibusdam.</p>
+							</div>
+						</a>
+					</div>
+					<div class='blog__item'>
+						<div class='blog-img__container'>
+							<img class='blog__img cat'
+							srcset='
+								./assets/images/384/dayne-topkin-unsplash_(Phone).jpg 384w,
+								./assets/images/576/dayne-topkin-unsplash_(Landscape_Phone).jpg 576w,
+								./assets/images/768/dayne-topkin-unsplash_(Tablet).jpg 768w,
+								./assets/images/992/dayne-topkin-unsplash_(Large_Desktop).jpg 992w'
+							sizes='
+								(width <= 384px) 384px,
+								(width <= 576px) 576px,
+								(width <= 768px) 768px,
+								(width <= 992px) 992px,
+								992px'
+							alt='a beautiful cat'>
+						</div>
+						<a href="">
+							<div class='blog-content__container'>
+								<h2 class='blog-h2 h2'>How to crush your enemies and see them driven before you.</h2>
+								<p class='blog-blurb'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam distinctio doloribus libero enim natus modi asperiores, commodi ea laudantium quibusdam.</p>
+							</div>
+						</a>
+					</div>
+					<div class='blog__item'>
+						<div class='blog-img__container'>
+							<img class='blog__img cat'
+							srcset='
+								./assets/images/384/gennifer-miller-unsplash_(Phone).jpg 384w,
+								./assets/images/576/gennifer-miller-unsplash_(Landscape_Phone).jpg 576w,
+								./assets/images/768/gennifer-miller-unsplash_(Tablet).jpg 768w,
+								./assets/images/992/gennifer-miller-unsplash_(Larger_Desktop).jpg 992w'
+							sizes='
+								(width <= 384px) 384px,
+								(width <= 576px) 576px,
+								(width <= 768px) 768px,
+								(width <= 992px) 992px,
+								992px'
+							alt='a beautiful cat'>
+						</div>
+						<a href="">
+							<div class='blog-content__container'>
+								<h2 class='blog-h2 h2'>Insert funny headline here.</h2>
+								<p class='blog-blurb'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam distinctio doloribus libero enim natus modi asperiores, commodi ea laudantium quibusdam.</p>
+							</div>
+						</a>
+					</div>
+				</section>
+			</main>
+			<nav class='bottom-nav nav'>
+				<ul class='menu'>
+					<li class='menu__icon'>
+						<a href="index.html">
+							<span class='fa-stack small'>
+								<i class="fa-solid fa-circle fa-stack-2x"></i><i class=" fa-stack-1x fa-solid fa-house-chimney"></i>
+							</span>
+						</a>
+					</li>
+					<li class='menu__icon'>
+						<a href='portfolio.html'>
+							<span class='fa-stack small'>
+								<i class="fa-solid fa-circle fa-stack-2x"></i><i class=" fa-stack-1x fa-solid fa-briefcase"></i>
+							</span>
+						</a>
+					</li>
+					<li class='menu__icon'>
+						<a href='contact.html'>
+							<span class='fa-stack small'>
+								<i class="fa-solid fa-circle fa-stack-2x"></i><i class=" fa-stack-1x fa-solid fa-envelope-open"></i>
+							</span>
+						</a>
+					</li>
+					<li class='menu__icon current-page'>
+						<a href='blog.html'>
+							<span class='fa-stack small'>
+								<i class="fa-solid fa-circle fa-stack-2x"></i><i class=" fa-stack-1x fa-solid fa-comment-dots"></i>
+							</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<script src='js/main.js'></script>
+	</body>
+</html>

@@ -1,0 +1,155 @@
+/* Dark theme */
+.body.dark {
+    background: #212529;
+    color: #dee2e6;
+}
+
+.hero__span1.dark {
+	color: #f8f9fa;
+}
+
+.hero__span2.dark {
+	color: #dee2e6;
+}
+
+.hero__btn.dark {
+	color: #f8f9fa;
+}
+
+.hero__btn.dark::before {
+    background: #dee2e6;
+}
+
+.btn__icon.dark {
+	background: #dee2e6;
+	color: #212529;
+}
+
+.bottom-nav.dark {
+	background: #212529;
+    box-shadow: 0 0 8px #6c757d;
+}
+
+.current-page .fa-stack-2x.dark {	
+    color: #f8f9fa;
+}
+ 
+.current-page .fa-stack-1x.dark {
+    color: #212529;
+}
+
+.fa-stack-2x.dark {
+	color: #6c757d;
+}
+
+.fa-stack-1x.dark {
+    color: #dee2e6;
+}
+
+.blog-content__container.dark {
+    background: #6c757d;
+}
+
+.blog__item.dark {
+    background: #212529;
+}
+
+.h2.dark {
+    color: #f8f9fa;
+}
+
+/* Media queries */
+
+@media all and (width >= 576px) {
+    .body {
+        width: 576px;
+        padding-left: 3.2rem;
+        padding-right: 3.2rem;
+    }
+
+    .blog {
+        width: auto;
+    }
+
+    .contact {
+        max-width: 576px;
+    }
+
+    .menu {
+        width: 576px;
+    }
+}
+
+@media all and (width >= 768px) {
+    .body {
+        width: 768px;
+    }
+
+    .header {
+        padding-top: 11.2rem;
+    }
+
+    .top-nav {
+        display: block;
+    }
+
+    .blog-h2 {
+        padding-left: 6.4rem;
+        padding-right: 6.4rem;
+    }
+
+    .blog-blurb {
+        padding-left: 6.4rem;
+        padding-right: 6.4rem;
+    }
+
+    .bottom-nav {
+        /* position: fixed; */
+        /* inset: 120px 120px auto auto;
+        display: block;
+        width: 80px;
+        height: 400px;
+        padding: 0 0 0 10px;
+        border-radius: 9999px; */
+        display: none;
+    }
+
+}
+
+@media all and (width >= 960px) {
+    .body {
+        width: 960px;
+    }
+
+    .hero {
+        display: flex;
+    }
+
+    .img__container {
+        flex: 50%;
+    }
+
+    .hero__img {
+        border-radius: 12px;
+    }
+
+    .hero__h1-container {
+        padding-top: 30%;
+        flex: 50%;
+    }
+
+    .blog-h2 {
+        padding-left: 12.8rem;
+        padding-right: 12.8rem;
+    }
+
+    .blog-blurb {
+        padding-left: 12.8rem;
+        padding-right: 12.8rem;
+    }
+}
+
+.hero__btn:hover {
+    cursor: pointer;
+}
+

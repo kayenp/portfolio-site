@@ -1,0 +1,61 @@
+.hero__span1 {
+	color: #212529;
+}
+
+.hero__span2 {
+	color: #6c757d;
+}
+
+.hero__btn {
+	color: #6c757d;
+}
+
+.hero__btn::before {
+	background: #6c757d;
+}
+.btn__icon {
+	background: #6c757d;
+	color: #fff;
+}
+
+.bottom-nav {
+	background: #f8f9fa;
+}
+
+.current-page .fa-stack-2x {
+	color: #212529;
+}
+ 
+.current__page .fa-stack-1x {
+	color: #fff;
+}
+
+.fa-stack-2x {
+	color: #6c757d;
+}
+
+.fa-stack-1x {
+	color: #dee2e6;
+}
+
+.attn {
+	color: #6c757d;
+}
+
+.badge {
+	background: #dee2e6;
+	color: #6c757d;
+}
+
+.blog__item {
+	background: #fff;
+}
+
+.blog-content__container {
+	background: #fff;
+}
+
+.blog-h2 {
+	color: #212529;
+}
+

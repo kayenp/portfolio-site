@@ -9,16 +9,20 @@
 }
 
 body {
-	color: #333;
-	font-size: 1.6rem;
-	line-height: 1.5;
+	background: #f9f8fa;
+	color: #212529;
+	font: 1.6rem/1.5 'Manrope', 'Inter', 'Roboto', sans-serif, serif;
 	margin-left: auto;
 	margin-right: auto;
-	padding: 1.6rem;
 	width: 384px;
+	padding-bottom: 84px;
 }
 
 a {
 	color: inherit;
 	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
 }

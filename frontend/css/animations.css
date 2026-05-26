@@ -1,0 +1,15 @@
+.btn__container:hover .slide__btn{
+	color: #fff;
+}
+
+.btn__container:hover .slide__btn::before {
+	transform: translateX(0);
+}
+
+.slide__btn.dark:hover {
+	color: #212529;
+}
+
+.slide__btn.dark:hover:before {
+	transform: translateX(0);
+}

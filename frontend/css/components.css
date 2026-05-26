@@ -1,69 +1,238 @@
-.header {
-	display: var(--display-flex);
-	position: var(--pos-rel);
-	justify-content: var(--space-between);
+.body__container {
+	position: relative;
 }
 
-/* Mobile navigation open*/
+.header {
+	display: flex;
+	position: relative;
+	padding: 1.6rem;
+}
 
-#menu__btn {
+.top-nav {
+	display: none;
+	width: 100%;
+	padding: 0 2rem 2rem 2rem;
+	border-bottom: 1px solid #dee2e6;
+}
+
+.top-menu {
+	display: block flex;
+	width: 100%;
+	justify-content: space-between;
+}
+
+.header__section {
+	padding: 3.2rem 1.6rem;
+}
+
+#theme__checkbox {
 	display: none;
 }
 
-.navicon {
-	transition: all .15s linear .15s;
+.theme__label {
 	display: block;
-	background: #333;
+	height: 34px;
+	width: 34px;
 	position: absolute;
-	height: 2px;
-	width: 18px;
-	top: 12px;
+	top: 22px;
+	right: 16px;
+	overflow: hidden;
 }
 
-.navicon::before,
-.navicon::after {
-	transition: all .15s linear .15s;
-	background: #333;
+.fa-circle-half-stroke {
+	display: flex;
+	align-items: center;
+	position: absolute;
+	inset: 0;
+}
+
+.hero {
+	padding: 4.8rem 3.2rem;
+	text-align: center;
+}
+
+.hero__span2 {
+	display: block;
+}
+
+.hero__sub {
+	max-width: 40ch;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.img__container {
+	display: flex;
+	justify-content: center;
+}
+
+.hero__img {
+	border: 2px solid #dee2e6;
+	border-radius: 50%;
+}
+
+.btn__container {
+	display: inline-block;
+	position: relative;
+	border-radius: 9999px;
+	overflow: hidden;
+}
+
+.slide__btn {
+	transition: color .25s linear 0s;
+	background: transparent;
+	border: 2px solid #6c757d;
+	border-radius: 9999px;
+	padding: 12px 72px 12px 36px;
+	
+}
+
+.slide__btn::before {
+	transition: transform .30s linear 0s;
+	position: absolute;
+	inset: -1px;
+	z-index: -1;
 	content: '';
+	transform: translateX(100%);
+	background: #6c757d;
+	border-radius: 9999px;
+}
+
+.btn__icon {
 	position: absolute;
-	height: 100%;
-	width: 100%;
-	display: block;
+	top: 1px;
+	right: 0;
+	background: #6c757d;
+	border: 1px solid #6c757d;
+	border-radius: 50%;
+	padding: 14px;
 }
 
-.navicon::before {
-	top: 5px;
-}
-
-.navicon::after {
-	top: -5px;
+.bottom-nav {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	padding: 16px 0 16px 0;
+	box-shadow: 0 0 100px #dee2e6;
 }
 
 .menu {
-	transition: all .15s linear .15s;
+	width: 384px;
+	display: flex;
+	justify-content: space-evenly;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.fa-stack.small {
+	font-size: 2.4rem;
+}
+
+.main {
+	padding: 1.6rem;	
+}
+
+.portfolio__item {
+	position: relative;
+	padding-bottom: 4.8rem;
+}
+
+.portfolio__item:nth-last-child(1n+2)::after {
+	display: block;
+	width: 50%;
 	position: absolute;
-	top: 3.2rem;
-	left: -8rem;
+	bottom: 0;
+	left: 25%;
+	content: '';
+	border: 1px solid #dee2e6;
+}	
+
+.portfolio__item:nth-child(1n+2) {
+	padding-top: 4.8rem;
 }
 
-#menu__btn:checked + .menu__icon .menu {
-	left: 0;
+.badge {
+	border-radius: 9999px;
+	padding: 4px 12px;
 }
 
-#menu__btn:checked + 
-.menu__icon .navicon {
-	transform: rotate(45deg);
+.blog {
+	margin-left: auto;
+	margin-right: auto;
 }
 
-#menu__btn:checked + 
-.menu__icon .navicon::before {
-	top: 0;
-	transform: rotate(-90deg);
+.blog__item {
+	border-radius: 8px;
+	box-shadow: inset 0 0 8px #dee2e6;
+	overflow: hidden;
 }
 
-#menu__btn:checked + 
-.menu__icon .navicon::after {
-	top: 0;
+.blog-content__container {
+	border-top: 8px solid #dee2e6;
+	padding: 2.4rem;
+}
+
+.blog__img {
+	object-fit: cover;
+}
+
+.blog-h2 {
+	text-align: left;
+	padding-bottom: 1.6rem;
+}
+
+.blog-blurb {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.h3 {
+	padding-bottom: .8rem;
+}
+
+.contact__container {
+	padding-bottom: 16px;
+}
+
+.contact__subcontainer {
+	/* flex: 100%; */
+	padding-bottom: 4.8rem;
+}
+
+.contact-h2__container {
+	/* flex: 100%; */
+	padding-bottom: 1.6rem;
+}
+
+.contact-h2 {
+	padding-bottom: 1.6rem;
+}
+
+.email-socials__container {
+	height: 100%;
+}
+
+.big-icon__container {
+	height: 52px;
 }
 
 
+.socials-icon__container {
+	height: 21px;
+}
+
+.contactForm input {
+	flex: 100%;
+	border: 1px solid #6c757d;
+	border-radius: 9999px;
+	padding: 16px 20px;
+}
+
+.contactForm textarea {
+	flex: 100%;
+	border: 1px solid #6c757d;
+	border-radius: 9999px;
+	padding: 16px 20px;
+}
