@@ -6,10 +6,10 @@
 	transform: translateX(0);
 }
 
-.body:has(#theme__checkbox:checked) .slide__btn:hover {
+.slide__btn.dark:hover {
 	color: #212529;
 }
 
-.body:has(#theme__checkbox:checked) .slide__btn:hover:before {
+.slide__btn.dark:hover:before {
 	transform: translateX(0);
 }
