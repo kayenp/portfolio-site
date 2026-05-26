@@ -1,41 +1,28 @@
 "use strict";
 
-const catImgElem = document.querySelector('.cat');
-const inspireImgElem = document.querySelector('.inspire');
-const funnyImgElem = document.querySelector('.funny');
-let screenWidth;
+const themeLabel = document.querySelector('.theme__label');
+const eleArr = Array.from(document.querySelectorAll('*'));
+let storedTheme = localStorage.getItem('theme');
 
-// addEventListener('resize', (() => {
-// 	let timeoutId;
+applyTheme();
 
-// 	return () => {
-// 		clearTimeout(timeoutId);
-// 		timeoutId = setTimeout(() => {
-// 			console.log(screen.width);
-// 			screenWidth = screen.width;
-// 			changeBlogImgs();
-// 		}, 250)
-// 	}
-// })());
+themeLabel.addEventListener('click', toggleTheme);
 
-// function changeBlogImgs() {
-// 	let imgWidth;
+function applyTheme() {
 
-// 	if (screenWidth <= 384) {
-// 		imgWidth = '352'
-// 	} else if (screenWidth > 384 && screenWidth < 768) {
-// 		imgWidth = '576';
-// 		// catImgElem.setAttribute('src', `./assets/images/${imgWidth}/oksana-maselko-midHvZAjJHg-unsplash (Landscape Phone).jpg`);
-// 		// inspireImgElem.setAttribute('src', `./assets/images/${imgWidth}/dayne-topkin-y5_mFlLMwJk-unsplash (Landscape Phone).jpg`);
-// 		// funnyImgElem.setAttribute('src', `./assets/images/${imgWidth}/gennifer-miller-sBlhqEozk6Q-unsplash (Landscape Phone).jpg`);
-// 	} else if (screenWidth >= 768) {
-// 		imgWidth = '768';
-// 	} else if (screenWidth >= 1200) {
-// 		imgWidth = '960';
-// 	};
+	if (storedTheme) {
+		eleArr.forEach(ele => ele.classList.toggle('dark'));
+	}
+};
 
-// 	catImgElem.setAttribute('width', imgWidth + 'px');
-// 	inspireImgElem.setAttribute('width', imgWidth + 'px');
-// 	funnyImgElem.setAttribute('width', imgWidth + 'px');
-// }
+function toggleTheme() {
+	(storedTheme) ? localStorage.removeItem('theme') : localStorage.setItem('theme', 'dark');
+
+	eleArr.forEach(ele => ele.classList.toggle('dark'));
+} 
+
+
+
+
+
 
