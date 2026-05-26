@@ -1,67 +1,60 @@
 /* Dark theme */
-
-.body:has(#theme__checkbox:checked) {
+.body.dark {
     background: #212529;
     color: #dee2e6;
 }
 
-#theme__checkbox:checked + .theme__label.fa-moon {
-    transform: translateX(100%);
-}
-
-#theme__checkbox:checked + .theme__label .fa-sun {
-    color: #dee2e6;
-    transform: translateX(0);
-}
-
-.body:has(#theme__checkbox:checked) .hero__span1 {
+.hero__span1.dark {
 	color: #f8f9fa;
 }
 
-.body:has(#theme__checkbox:checked) .hero__span2 {
+.hero__span2.dark {
 	color: #dee2e6;
 }
 
-.body:has(#theme__checkbox:checked) .hero__btn {
+.hero__btn.dark {
 	color: #f8f9fa;
 }
 
-.body:has(#theme__checkbox:checked) .hero__btn::before {
+.hero__btn.dark::before {
     background: #dee2e6;
 }
 
-.body:has(#theme__checkbox:checked) .btn__icon {
+.btn__icon.dark {
 	background: #dee2e6;
 	color: #212529;
 }
 
-.body:has(#theme__checkbox:checked) .bottom-nav {
+.bottom-nav.dark {
 	background: #212529;
     box-shadow: 0 0 8px #6c757d;
 }
 
-.body:has(#theme__checkbox:checked) .current-page .fa-stack-2x {	
+.current-page .fa-stack-2x.dark {	
     color: #f8f9fa;
 }
  
-.body:has(#theme__checkbox:checked) .current-page .fa-stack-1x {
+.current-page .fa-stack-1x.dark {
     color: #212529;
 }
 
-.body:has(#theme__checkbox:checked) .fa-stack-2x {
+.fa-stack-2x.dark {
 	color: #6c757d;
 }
 
-.body:has(#theme__checkbox:checked) .fa-stack-1x {
+.fa-stack-1x.dark {
     color: #dee2e6;
-
 }
 
-.body:has(#theme__checkbox:checked) .blog-content__container {
+.blog-content__container.dark {
     background: #6c757d;
 }
 
-.body:has(#theme__checkbox:checked) .h2 {
+.blog__item.dark {
+    background: #212529;
+}
+
+.h2.dark {
     color: #f8f9fa;
 }
 
@@ -137,7 +130,7 @@
     }
 
     .hero__img {
-        border-radius: 0px;
+        border-radius: 12px;
     }
 
     .hero__h1-container {
